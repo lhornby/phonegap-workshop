@@ -3,6 +3,7 @@ var app = {
   
     initialize: function() {
         var self = this;
+        this.registerEvents();
         this.store = new MemoryStore(function() {
             self.showAlert('Store Initialized', 'Info');
             $('body').html(new HomeView(self.store).render().el);
@@ -30,7 +31,13 @@ var app = {
           $(event.target).removeClass('tappable-active');
           });
       } else {
-        
+        // ... if not: register mouse events instead
+        $('body').on('mousedown', 'a'. functon(event) {
+          $(event.target).addClass('tappable-active');
+        });
+        $('body').on('mouseup', 'a', function(event) {
+          $(event.target).removeClass('tappable-active');
+        });
       }
     },
 
