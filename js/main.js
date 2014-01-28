@@ -17,7 +17,7 @@ var app = {
         else {
             alert(title ? (title + ": " + message) : message);
         }
-    }
+    },
     
     registerEvents: function() {
       var self = this;
