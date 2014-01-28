@@ -3,7 +3,7 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = ""
         versionCode = "10"
-        version     = "1.1.0">
+        version     = "1.1.8">
  
     <name>Employee Directory</name>
  
@@ -12,7 +12,7 @@
     </description>
  
     <author href="http://coenraets.org" email="ccoenraets@gmail.com">
-        Christophe Coenraets
+        Lukas Hornby
     </author>
  
     <feature name="http://api.phonegap.com/1.0/camera"/>
