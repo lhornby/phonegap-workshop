@@ -32,7 +32,7 @@ var app = {
           });
       } else {
         // ... if not: register mouse events instead
-        $('body').on('mousedown', 'a'. functon(event) {
+        $('body').on('mousedown', 'a', functon(event) {
           $(event.target).addClass('tappable-active');
         });
         $('body').on('mouseup', 'a', function(event) {
