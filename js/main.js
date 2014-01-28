@@ -26,11 +26,12 @@ var app = {
         var html = 
             "<div class='header'><h1>Home</h1></div>" +
             "<div class='search-view'>" +
-            "<input class='employee-list'></ul>" +
+            "<input class='search-key'/>" +
+            "<ul class='employee-list'></ul>" +
             "</div>"
         $('body').html(html);
         $('.search-key').on('keyup', $.proxy(this.findByName, this));
-    }
+    },
     
     showAlert: function (message, title) {
         if(navigator.notification) {
