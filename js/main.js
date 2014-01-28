@@ -43,7 +43,7 @@ var app = {
       $(window).on('hashchange', $.proxy(this.route, this));
     },
     
-    route function() {
+    route: function() {
       var hash = window.location.hash;
       if (!hash) {
         $('body').html(new HomeView(this.store).render().el);
