@@ -44,7 +44,7 @@ var app = {
     },
     
     route: function() {
-      var self - this;
+      var self = this;
       var hash = window.location.hash;
       if (!hash) {
         if (this.homePage) {
